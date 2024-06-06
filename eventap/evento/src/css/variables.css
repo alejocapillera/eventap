@@ -1,0 +1,53 @@
+/* :root  {
+    --negro: #000000;
+    --negrosecundario: #23272A;
+    --gris:gray;
+    --textoblanco:#ffff;
+    --fondonegro:#000000;
+    --rojo:#DD2E44;
+    --linea:#23272A;
+}
+
+:root  {
+    --blanco: #ffff;
+    --blancosecundario: none;
+    --gris:gray;
+    --textonegro:#111B21;
+    --fondoblanco:#F0F2F5;
+    --linea:gray;
+}
+:root {
+    --original: #212121;
+    --originalsecundario: none;
+    --gris:gray;
+    --textooriginal:#fff;
+    --fondooriginal:#171717;
+}
+ */
+ /* Modo original */
+:root {
+    --fondo: #212121;
+    --texto: #fff;
+    --gris: gray;
+    --rojo: #DD2E44;
+    --linea: #23272A;
+}
+
+/* Modo oscuro */
+:root[data-theme="oscuro"] {
+    --fondo: #000000;
+    --texto: #ffff;
+    --gris: #23272A;
+    --rojo: #DD2E44;
+    --linea: #23272A;
+}
+
+/* Modo claro */
+:root[data-theme="claro"] {
+    --fondo: #F0F2F5;
+    --texto: #111B21;
+    --gris: gray;
+    --rojo: #DD2E44;
+    --linea: gray;
+}
+

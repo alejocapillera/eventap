@@ -1,0 +1,364 @@
+/* Tema claro */
+body[data-theme="light"] {
+    --negro: #000000;
+    --negrosecundario: #23272A;
+    --gris: gray;
+    --textoblanco: #ffff;
+    --fondonegro: #000000;
+}
+
+/* Tema oscuro */
+body[data-theme="dark"] {
+    --negro: #ffff;
+    --negrosecundario: none;
+    --negroterceario: #fff;
+    --gris: gray;
+    --textoblanco: #111B21;
+    --fondonegro: #F0F2F5;
+}
+
+/* Tema personalizado */
+body[data-theme="custom"] {
+    --negro: #212121;
+    --negrosecundario: none;
+    --negroterceario: #212121;
+    --gris: gray;
+    --textoblancol: #fff;
+    --fondonegro: #171717;
+}
+
+/* Aplicar estilos utilizando las variables */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondonegro);
+}
+.logopc2 {
+    display: none; /* Por defecto, oculta la imagen en todos los dispositivos */
+}
+.inferior {
+    background-color: var(--fondonegro);
+    position: relative;
+    padding-bottom: 50px; 
+    height: 57vh;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.inferior .eventtitulo {
+    color: var(--textoblanco);
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.ubicacion-hora {
+    background-color: #DD2E44;
+    width: 40%;
+    float: left; 
+}
+.inferior .texto {
+    color: var(--textoblanco);
+    font-size: 16px;
+    text-align: left;
+    margin-left: 2%;
+}
+.inferior .texto1 {
+    color: var(--gris);
+    font-size: 16px;
+    text-align: left;
+    margin-left: 2%;
+    display: inline-block;
+    margin-right: 10px; /* Espacio opcional entre textos */
+}
+.inferior .unirse {
+    border-radius: 17px;
+    width: 20%;
+    height: 40px; /* Altura fija */
+    background-color: #DD2E44;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    left: 10px; /* Ajusta la distancia desde la izquierda */
+    box-shadow: 
+        2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+        -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+    
+}
+.inferior .texto2 {
+    color: var(--gris);
+    font-size: 16px;
+    text-align: left;
+    margin-left: 2%;
+}
+.inferior .map-evento {
+    height: 55vh;
+    float: right;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 3%;
+    border-radius: 20px;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    box-shadow: 
+        2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+        -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+}
+.cont {
+    width: 80%;
+    height: 100vh;
+    margin-left: 20%;
+    border-left: 2px solid var(--negrosecundario);
+}
+.cont-event {
+    margin-left: 5%;
+    background-color: var(--negro);
+    width: 60%;
+    height: 100vh;
+    float: left;
+    overflow-y: auto; /* Agrega scroll vertical si el contenido excede el tamaño del contenedor */
+    max-height: 100vh; /* Altura máxima del contenedor antes de mostrar el scroll */
+    scrollbar-width: thin; /* Ancho del scrollbar */
+    scrollbar-color: #DD2E44 var(--negro); /* Color del scrollbar */    
+    border-right: 2px solid var(--negrosecundario);
+    border-left: 2px solid var(--negrosecundario);
+    box-shadow: 
+        2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+        -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+}
+.lateral {
+    background-color: var(--negro);
+    width: 30%;
+    height: 80%;
+    float: right;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    border-radius: 20px;
+    border: 2px solid var(--negrosecundario);
+    box-shadow: 
+        2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+        -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+}
+@media (max-width: 1024px) {
+    .cont {
+        width: 90%;
+        height: 100vh;
+        margin-left: 10%;
+    }
+}
+@media (max-width: 768px) {
+    .inferior {
+        height: auto; /* Ajuste automático para móviles */
+        padding-bottom: 20px; /* Espacio adicional para el botón */
+    }
+    .cont {
+        width: 100%;
+        margin-left: 0;
+        border-left: none;
+    }
+    .lateral {
+        border-radius: 0px;
+        width: 100%;
+        height: 10vh;
+        margin: 0;
+        float: none;
+    }
+    .cont-event {
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        float: none;
+        border: none; /* Borde en la parte superior */
+        overflow-y: none; /* Agrega scroll vertical si el contenido excede el tamaño del contenedor */
+        scrollbar-width: none; /* Ancho del scrollbar */
+    }
+    .superior .usuariofoto {
+        width: 55px;
+        height: 55px;
+    }
+    .inferior .map-evento {
+        height: 300px;
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 3%;
+    }
+    .cont-event .evento {
+        width: 99%;
+        height: auto; /* Ajuste automático para contenido variable */
+        margin-top: 0;
+        margin-bottom: 3%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0;
+    }
+    .inferior .unirse {
+        width: 70%;
+        height: 40px;
+        bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+        left: 15%;
+        right: 15%;
+        position: relative; /* Cambia a relativo para móviles */
+        margin: 20px auto; /* Centra el botón en dispositivos móviles */
+    }
+    .evento .superior {
+        width: 100%;
+        height: 10%;
+        float: top;
+        border-bottom: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .inferior .eventtitulo {
+        color: var(--textoblanco);
+        font-size: 16px;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+    .ubicacion-hora {
+        background-color: #DD2E44;
+        width: 50%;
+        float: left;
+    }
+    .inferior .texto {
+        color: var(--textoblanco);
+        font-size: 16px;
+        text-align: left;
+        margin-left: 2%;
+    }
+    .inferior .unirse {
+        margin-bottom: -15%;
+    }
+    .inferior .descripcion {
+        width: 95%;
+    }
+    .logopc2 {
+        display: block; 
+        height: 40px; 
+        width: 80px; 
+        margin-left: -10px;
+        margin-top: 3%;
+    }
+}
+.superior {
+    background-color: var(--fondonegro);
+    width: 100%;
+    height: 15%;
+    float: top;
+    border-bottom: 2px solid var(--negroterceario);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.evento {
+    background-color: var(--fondonegro);
+    width: 90%;
+    height: auto; /* Cambiado a auto para que se ajuste al contenido */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 15px;
+    border: 2px solid var(--negrosecundario);
+    box-shadow: 
+        2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+        -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+}
+.btnusuario {
+    color: var(--textoblanco);
+    font-weight: bold;
+}
+
+.btnusuario:hover {
+    color: var(--textoblanco);
+    text-decoration: none; 
+}
+
+.usuariofoto {
+    width: 45px;
+    height: 45px;
+    margin-top: 1%;
+    margin-bottom: -1%;
+    margin-left: 1%;
+    margin-right: 2%;
+    box-shadow: 
+        2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+        -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+}
+.descripcion {
+    width: 44%;
+    text-align: justify;
+    margin: 0 2%;
+    background-color: var(--negro);
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Agrega un scroll vertical */
+    max-height: 150px; /* Altura máxima del div de descripción */
+    overflow-x: hidden;
+    border: 2px solid var(--negrosecundario);
+    box-shadow: 
+        2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+        -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+}
+
+
+
+
+
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    --background: #434049;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #ff1100;
+    background: var(--background);
+    transition: .5s;
+  }
+  
+  input:checked + .slider {
+    background-color: #373047;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #ff5100;
+  }

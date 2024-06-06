@@ -1,0 +1,52 @@
+body {
+  background-color: #23272a;
+}
+.container {
+background-color: #23272a;
+color: #ffffff;
+height: 100vh; /* Ocupa todo el alto de la pantalla */
+}
+#map { height: 400px;
+  width: 100%;
+}
+
+.mostrar-event {
+background-color: #23272a;
+width: 120%;
+color: #ffffff;
+border-radius: 20px;
+height: 100vh; /* Ocupa todo el alto de la pantalla */
+}
+
+.evento-cont {
+background-color: #2c2f33;
+width: 70%;
+overflow-y: auto;
+height: 100vh; /* Ocupa todo el alto de la pantalla */
+scrollbar-width: thin;
+scrollbar-color: #DD2E44 #343a40;
+}
+
+@media (min-width: 768px) {
+.evento-cont {
+margin-left: 20%;
+}
+}
+
+
+
+.modal-body{
+background-color: #343a40;
+}
+
+.button {
+  background-color: #DD2E44;
+  color: white;
+  border: none;
+  margin-top: 4%;
+  cursor: pointer;
+}
+.modal-content{
+
+  background-color: #343a40;
+}

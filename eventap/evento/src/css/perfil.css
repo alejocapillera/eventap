@@ -1,0 +1,403 @@
+/* Tema claro */
+body[data-theme="light"] {
+    --negro: #000000;
+    --negrosecundario: #23272A;
+    --gris: gray;
+    --textoblanco: #ffff;
+    --fondonegro: #000000;
+}
+
+/* Tema oscuro */
+body[data-theme="dark"] {
+    --negro: #ffff;
+    --negrosecundario: none;
+    --negroterceario: #fff;
+    --gris: gray;
+    --textoblanco: #111B21;
+    --fondonegro: #F0F2F5;
+}
+
+/* Tema personalizado */
+body[data-theme="custom"] {
+    --negro: #212121;
+    --negrosecundario: none;
+    --negroterceario: #212121;
+    --gris: gray;
+    --textoblancol: #fff;
+    --fondonegro: #171717;
+}
+
+.body{
+background-color:var(--fondonegro);
+}
+/* computadora */
+.cont{
+width:80%;
+height:100vh;
+margin-left:20%;
+background-color:var(--negro);
+
+}
+
+.cont .superior{
+width:100%;
+height:70%;
+float: top;
+background-color:var(--negro);
+position: relative; 
+
+}
+
+.superior .banner{
+width:100%;
+height:46%;
+float:top;
+background-color:green;
+}
+
+.banner .banner1{
+width:100%;
+height:100%;
+
+}
+.superior .bannerinferior{
+width:100%;
+height:15%;
+float:top;
+background-color:var(--negro);
+}
+.bannerinferior .perfil{
+background-color:pink;
+width:150px;
+height:150px;
+top:28%;
+position: absolute; 
+margin-left:2%;
+border-radius:100%;
+border:5px solid var(--negro);
+}
+.bannerinferior .perfill{
+width:140px;
+height:140px;
+position: absolute; 
+border-radius:100%;
+}
+
+
+
+
+
+.editarperfil{
+background-color:var(--fondonegro);
+float:right;
+margin-right:2%;
+width:16%;
+height:70%;
+margin-top:1%;
+text-align:center;
+border-radius:25px;
+padding: 5px;
+font-size: 20px;
+  box-shadow: 
+            2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+            -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+color:var(--gris);
+font-weight: bold;
+border:2px solid var(--negrosecundario);
+}
+.editarperfil:hover{
+text-decoration: none;
+color:var(--textoblanco);
+}
+.nickname{
+font-size: 25px;
+margin-left:2%;
+color:var(--textoblanco);
+margin-top:1%;
+font-weight: bold;
+}
+
+.seleccionar{
+position: absolute; /* Posición absoluta para alinear */
+bottom: 0; /* Lo posiciona al fondo del contenedor */
+width:100%;
+border-bottom:2px solid var(--linea);
+
+
+}
+.seleccionar1{
+float:left;
+margin-left:25%;
+color:var(--gris);
+font-weight: bold;
+border-bottom:4px solid var(--negro);
+}
+.seleccionar2{
+margin-right:25%;
+float:right;
+color:var(--gris);
+font-weight: bold;
+border-bottom:4px solid var(--negro);
+
+}
+
+.seleccionar1:hover{
+text-decoration: none;
+color:var(--textoblanco);
+border-bottom:4px solid var(--rojo);
+
+}
+
+.seleccionar2:hover{
+text-decoration: none;
+color:var(--textoblanco);
+border-bottom:4px solid var(--rojo);
+
+}
+.seleccionar1:active{
+text-decoration: none;
+color:var(--textoblanco);
+border-bottom:4px solid var(--rojo);
+
+}
+
+.seleccionar2:active{
+text-decoration: none;
+color:var(--textoblanco);
+border-bottom:4px solid var(--rojo);
+
+}
+.cont .inferior{
+width:100%;
+height:auto;
+float: bottom;
+background-color:var(--fondonegro);
+}
+
+.publicadoss{
+background-color:var(--negro);
+width:80%;
+height:100vh;
+margin-left:10%;
+margin-right:10%;
+box-shadow: 
+            2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+            -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+overflow-y: auto; /* Agrega scroll vertical si el contenido excede el tamaño del contenedor */
+max-height: 100vh; /* Altura máxima del contenedor antes de mostrar el scroll */
+scrollbar-width: thin; /* Ancho del scrollbar */
+scrollbar-color: #DD2E44 var(--negro);; /* Color del scrollbar */    
+border-right: 2px solid var(--negrosecundario);
+border-left: 2px solid var(--negrosecundario);
+}
+
+.unidoss{
+display: none;
+background-color:blue;
+width:80%;
+height:100vh;
+margin-left:10%;
+margin-right:10%;
+}
+
+.evento {
+        background-color: var(--fondonegro);;
+        width: 80%;
+        height: 80%; /* Cambiado a auto para que se ajuste al contenido */
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 15px;
+        border: 2px solid var(--negrosecundario);
+        box-shadow: 
+            2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+            -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+    }
+
+    .evento .superior {
+        background-color: var(--fondonegro);
+        width: 100%;
+        height: 15%;
+        border-bottom: 2px solid var(--negroterceario);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        float: top;
+    }
+
+    .usuariofoto {
+        
+        width: 60px;
+        height: 60px;
+        margin-top:1%;
+        margin-bottom:-1%;
+        margin-left:1%;
+        margin-right:2%;
+        box-shadow: 
+            2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+            -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+    }
+
+    .evento .inferior {
+        background-color: var(--fondonegro);
+        height:80%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-top:2%;
+    }
+    .inferior .map-evento {
+        height: 100%;
+        float: right;
+        width: 50%;
+        margin-left: auto;
+        margin-right:2%;
+        border-radius: 20px;
+        margin-top: 0%;
+        box-shadow: 
+            2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+            -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+    }
+
+    .eventtitulo {
+        color: var(--textoblanco);
+        font-size: 16px;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    .texto1 {
+        color: var(--gris);
+        font-size: 16px;
+        text-align: left;
+        margin-left: 2%;
+        display: inline-block;
+        margin-right: 10px; /* Espacio opcional entre textos */
+    }
+
+    .descripcion {
+
+    width: 44%;
+    text-align: justify;
+    margin: 0 2%;
+    background-color: var(--negro);;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Agrega un scroll vertical */
+    max-height: 150px; /* Altura máxima del div de descripción */
+    overflow-x: hidden;
+    border: 2px solid var(--negrosecundario);
+    box-shadow: 
+            2px 0 3px rgba(0, 0, 0, 0.2), /* Sombra derecha más fina */
+            -2px 0 3px rgba(0, 0, 0, 0.2); /* Sombra izquierda más fina */
+        
+    }
+    .btnusuario {
+    color: var(--textoblanco);
+    font-weight: bold;
+    font-size: 16px;
+    }
+
+/* tablet */
+@media (max-width: 1024px){
+.cont{
+width:90%;
+margin-left:10%;
+}
+.editarperfil{
+width:25%;
+height:70%;
+padding: 5px;
+}
+}
+
+/* celular */
+@media (max-width: 768px){
+.cont{
+width:100%;
+margin-left:0%;
+border-left:none;
+
+}
+.cont .superior{
+height:50%;
+}
+
+.cont .inferior{
+margin-bottom:15%;
+width:100%
+}
+
+.bannerinferior .perfil{
+width:110px;
+height:110px;
+top:28%;
+}
+.bannerinferior .perfill{
+width:100px;
+height:100px;
+}
+.editarperfil{
+width:35%;
+height:70%;
+margin-top:2%;
+padding: 5px;
+font-size: 15px;
+}
+.publicadoss{
+width:100%;
+margin-left:0%;
+margin-right:0%;
+}
+        .evento .superior {
+            width: 100%;
+            height: 10%;
+            border-bottom: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        .eventtitulo {
+            color: var(--textoblanco);
+            font-size: 16px;
+            text-align: left;
+            font-weight: bold;
+            margin-top: 2%;
+            margin-left: 2%;
+        }
+        .ubicacion-hora {
+            background-color: #DD2E44;
+            width: 50%;
+            float: left;
+        }
+        .texto {
+            color: var(--textoblanco);
+            font-size: 16px;
+            text-align: left;
+            margin-left: 2%;
+        }
+        .inferior .descripcion{
+            width: 95%;
+        }
+        .inferior .map-evento {
+            height: 300px;
+            width: 100%;
+            float: none;
+            margin-left: 0;
+            border-radius: 0;
+            margin-top: 0;
+            margin-bottom: 3%;
+        }
+        .inferior .publicadoss {
+            width: 99%;
+            height: auto; /* Ajuste automático para contenido variable */
+            margin-top: 0;
+            margin-bottom: 15%;
+            margin-left: 0;
+            margin-right: 0;
+            border-radius: 0;
+        }
+
+
+}
