@@ -117,7 +117,7 @@ $stmt_usuario->close();
     </div>
 </div>
             </div>
-            <div class="unidoss">
+            <div class="unidosss">
             </div>
         </div>
     </div>
