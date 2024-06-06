@@ -41,7 +41,7 @@ $stmt_usuario->close();
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>pepelol</title>
+    <title>perfil</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/variables.css">
      <link rel="stylesheet" href="../CSS/perfil.css">
@@ -117,7 +117,7 @@ $stmt_usuario->close();
     </div>
 </div>
             </div>
-            <div class="unidosss">
+            <div class="unidoss">
             </div>
         </div>
     </div>
