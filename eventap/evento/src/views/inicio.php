@@ -29,7 +29,7 @@ $stmt_usuario->close();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>inicio</title>
+    <title>inqicio</title>
     <link rel="stylesheet" href="../CSS/inicio1.css">
     <link rel="stylesheet" href="../CSS/variables.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
