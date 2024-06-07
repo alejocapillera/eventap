@@ -36,7 +36,7 @@ $stmt_usuario->close();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="../CSS/variables.css"> <!-- Archivo de variables CSS -->
+    <link rel="stylesheet" href="../CSS/variables.css"> 
     <link rel="stylesheet" href="../CSS/inicio.css"> 
 
 </head>
